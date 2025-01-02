@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shawarma Fusion-Signup</title>
+
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: montserrat;
+            background:linear-gradient(120deg,#2980b9,#8e44ad)
+        }
+        .signup-page{
+            height: 500px;
+            width: 500px;
+            border: 1px solid black;
+            background-color: white;
+            border-radius: 7px;
+        }
+        .signup-page h1{
+            text-align: center;
+            font-size: 25px;
+        }
+        .signup-page form{
+           padding: 20px 25px;
+
+        }
+        .signup-input-box{
+            
+            margin: 20px 25px;
+        }
+     
+        .signup-page .signup-input-box input{
+            width: 100%;
+            height: 30px;
+            padding-left: 10px;
+            position: relative;
+        }
+        .signup-page .signup-input-box input::placeholder{
+            font-size: 12px;
+        }
+        /* .signup-page .signup-input-box i{
+            position: absolute;
+            font-size: 20px;
+            color: black;
+        } */
+        .signup-btn{
+            margin: 0px 25px;
+
+        }
+        .signup-page input[type="submit"]{
+            width: 105%;
+            box-sizing: border-box;
+            height: 40px;
+            font-size: 15px;
+            font-weight: bold;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            background-color: #2691d9;
+
+        }
+        .login-link{
+            text-align: center;
+        }
+
+        .signup-page .box{
+            /* border: none; */
+            box-sizing: border-box;
+            width: 83%;
+            height: 40px;
+            margin-left: 45px;
+            margin-top: 20px;
+            padding-top: 8.5px;
+            text-align: center;
+            border-radius: 5px;
+            
+        }
+
+        .box a{
+            text-decoration: none;
+            
+        }
+        .facebook-box{
+            background-color: #1877F2;
+            
+        }
+        .goggle-box{
+           border: 0.5px solid #666;
+        }
+        .fb{
+            color: white;
+        }
+        .g{
+            color: black;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="signup-page">
+        <h1>Signup</h1>
+        <form action="">
+            <div class="signup-input-box">
+               <input type="email" placeholder="Email" required>
+            </div>
+
+            <div class="signup-input-box">
+                <input type="password" placeholder="creat password">
+             </div>
+
+             <div class="signup-input-box">
+                <input type="password" placeholder="confirm password">
+             </div>
+
+             <div class="signup-btn">
+                <input class="submit-btn" type="submit" value="signup">
+             </div>
+
+            
+        </form>
+        <div class="login-link">
+            <p>Already have an account?<a href="">Login</a></p>
+         </div>
+
+         <div class="facebook-box box">
+            <a href="#" class="fb">Login with Facebook</a>
+            <i class="fa-brands fa-facebook"></i>
+         </div>
+         
+
+         <div class="goggle-box box">
+            <a class="g" href="#">Login with Google</a>
+         </div>
+    </div>
+</body>
+</html>
